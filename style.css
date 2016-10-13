@@ -1,0 +1,56 @@
+.sample-view {
+	border: 4px solid #F33;
+	padding: 10px 10px;
+	cursor: move;
+  text-align: center;
+}
+.actor {
+	padding: 4px;
+	cursor: move;
+  z-index:-1;
+  border: solid 2px #F80;
+  display: inline-block;
+  margin: 2px 2px;
+}
+.sample-control-button {
+	border: 4px solid blue;
+	cursor: pointer;
+	/*float: right;*/
+	padding: 0px 2px;
+	font-size: 1.3em;
+	font-weight: bold;
+  display: inline-block;
+}
+.play-button {
+	background: #3F3;
+}
+.back-button {
+	background: #AAA;
+}
+.delete-button {
+	background: #F33;
+}
+
+#listener {
+	font-weight: bold;
+	padding: 5px;
+	border: 4px solid #F77;
+	cursor: move;
+  z-index:0;
+}
+#object-container {
+  border: 2px solid #555;
+  padding: 5px 5px;
+  overflow: hidden;
+}
+.sample-object {
+  padding: 4px;
+  border: solid 2px #F33;
+  display: inline-block;
+  margin: 2px 2px;
+  cursor: move;
+}
+
+canvas {
+  cursor: crosshair;
+}
