@@ -9,12 +9,14 @@ var Actor = function(name, context, $canvas, dragdrophandler, nodefn) {
 
 Actor.prototype.createCreator = function() {
 	this.$creator = $('<div>').addClass("actor");
+	$('#object-container').append(this.$creator);
 	this.$creator.html(this.name).attr("draggable", "true");
 
 	var instance = this;
 	this.$creator.on("dragstart", function(ev) {
     ev.stopPropagation();
     instance.dragdrophandler.action = instance.name;
+    ev.originalEvent.dataTransfer.setData('Text/html', "lowpass");
     ev.dropEffect = "move";
 	});
 
@@ -28,7 +30,7 @@ Actor.prototype.createCreator = function() {
 		ev.stopPropagation();
 	});
 
-	$('#object-container').append(this.$creator);
+
 }
 
 

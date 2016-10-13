@@ -5,8 +5,8 @@ var Sample = function(name, buffer, context, name, canvas, x, y, allSamples, aud
   this.forwardBuffer = buffer;
   this.reverseBuffer = context.createBuffer(buffer.numberOfChannels, buffer.length, context.sampleRate);
   var i = 0;
-  if(buffer.channels != 2) {
-  	console.log("Got Buffer with " + buffer.channels + "channels.");
+  if(buffer.numberOfChannels != 2) {
+  	console.log("Got Buffer with " + buffer.channels + " channels.");
   }
   for(; i<buffer.numberOfChannels; i++) {
   	var farr = buffer.getChannelData(i);
