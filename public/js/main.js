@@ -327,7 +327,7 @@ $(document).ready(function() {
 		lastMouse = null;
 	});
 	$listener.mouseup(function(ev) {
-		ev.stopPropagation();
+		// ev.stopPropagation();
 	});
 	// $listener.on("dragstart", function(ev) {
  //    ev.stopPropagation();
